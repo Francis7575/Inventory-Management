@@ -1,3 +1,5 @@
+import { StringDecoder } from "string_decoder";
+
 export interface Product {
   productId: string;
   name: string;
@@ -46,4 +48,10 @@ export interface DashboardMetrics {
   purchaseSummary: PurchaseSummary[];
   expenseSummary: ExpenseSummary[];
   expenseByCategorySummary: ExpenseByCategorySummary[];
+}
+
+export interface User {
+  userId: string
+  name: string
+  email: string
 }
